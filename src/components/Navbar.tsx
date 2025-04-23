@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 
@@ -11,8 +10,8 @@ const Navbar = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="flex items-center gap-2">
-        <div className="w-8 h-8 bg-gradient-to-br from-lovable-teal to-purple-400 rounded-lg"></div>
-        <h1 className="text-xl font-semibold text-lovable-dark">Lovable Brain Insight</h1>
+        <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-purple-400 rounded-lg"></div>
+        <h1 className="text-xl font-semibold text-gray-800">Brain Insight</h1>
       </div>
       
       <div className="hidden md:flex gap-8">

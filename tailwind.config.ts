@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,12 +62,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom brand colors for Lovable Brain Insight
-				lovable: {
-					blue: '#D3E4FD',
-					gray: '#F1F0FB',
-					teal: '#9b87f5',
-					dark: '#1A1F2C',
+				// Custom brand colors
+				teal: {
+					500: '#0D9488',
+					600: '#0D9488',
+				},
+				purple: {
+					300: '#D8B4FE',
+					400: '#C084FC',
+				},
+				gray: {
+					800: '#1F2937',
+					900: '#111827',
 				},
 			},
 			borderRadius: {
