@@ -15,9 +15,9 @@ const Navbar = () => {
       </div>
       
       <div className="hidden md:flex gap-8">
-        <a href="#upload" className="text-gray-600 hover:text-lovable-teal transition-colors">Upload Scan</a>
-        <a href="#how-it-works" className="text-gray-600 hover:text-lovable-teal transition-colors">How It Works</a>
-        <a href="#about" className="text-gray-600 hover:text-lovable-teal transition-colors">About</a>
+        <a href="#upload" className="text-gray-600 hover:text-teal-500 transition-colors">Upload Scan</a>
+        <a href="#how-it-works" className="text-gray-600 hover:text-teal-500 transition-colors">How It Works</a>
+        <a href="#about" className="text-gray-600 hover:text-teal-500 transition-colors">About</a>
       </div>
     </motion.nav>
   );

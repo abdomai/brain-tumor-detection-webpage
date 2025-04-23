@@ -11,8 +11,8 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-lovable-teal to-purple-400 rounded-lg"></div>
-              <h3 className="text-xl font-semibold">Lovable Brain Insight</h3>
+              <div className="w-8 h-8 bg-gradient-to-br from-teal-500 to-purple-400 rounded-lg"></div>
+              <h3 className="text-xl font-semibold">Brain Insight</h3>
             </div>
             <p className="text-gray-300 mb-4">
               Using AI to support brain tumor detection with care and precision.
@@ -22,18 +22,18 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#upload" className="text-gray-300 hover:text-lovable-teal transition-colors">Upload Scan</a></li>
-              <li><a href="#how-it-works" className="text-gray-300 hover:text-lovable-teal transition-colors">How It Works</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-lovable-teal transition-colors">About</a></li>
+              <li><a href="#upload" className="text-gray-300 hover:text-teal-500 transition-colors">Upload Scan</a></li>
+              <li><a href="#how-it-works" className="text-gray-300 hover:text-teal-500 transition-colors">How It Works</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-teal-500 transition-colors">About</a></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-medium mb-4">Resources</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-lovable-teal transition-colors">Brain Health Blog</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-lovable-teal transition-colors">Education Center</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-lovable-teal transition-colors">Research Papers</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-teal-500 transition-colors">Brain Health Blog</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-teal-500 transition-colors">Education Center</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-teal-500 transition-colors">Research Papers</a></li>
             </ul>
           </div>
           
