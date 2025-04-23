@@ -16,7 +16,7 @@ const BrainMesh = ({ color = "#9b87f5" }) => {
 
   return (
     <Sphere ref={mesh} args={[1, 64, 64]} scale={1.4}>
-      <MeshDistortMaterial
+      <MeshDistortMaterial 
         color={color}
         attach="material"
         distort={0.4}
