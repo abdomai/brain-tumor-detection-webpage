@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom brand colors for Lovable Brain Insight
+				lovable: {
+					blue: '#D3E4FD',
+					gray: '#F1F0FB',
+					teal: '#9b87f5',
+					dark: '#1A1F2C',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +92,65 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'fade-out': {
+					'0%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					}
+				},
+				'breathing': {
+					'0%, 100%': {
+						transform: 'scale(1)',
+						opacity: '0.8',
+					},
+					'50%': {
+						transform: 'scale(1.05)',
+						opacity: '1',
+					},
+				},
+				'gentle-pulse': {
+					'0%, 100%': {
+						opacity: '0.8',
+					},
+					'50%': {
+						opacity: '1',
+					},
+				},
+				'rotate-3d': {
+					'0%': {
+						transform: 'rotateX(0deg) rotateY(0deg)'
+					},
+					'50%': {
+						transform: 'rotateX(180deg) rotateY(10deg)'
+					},
+					'100%': {
+						transform: 'rotateX(360deg) rotateY(0deg)'
+					}
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.4s ease-out',
+				'fade-out': 'fade-out 0.4s ease-out',
+				'breathing': 'breathing 4s infinite ease-in-out',
+				'gentle-pulse': 'gentle-pulse 2s infinite ease-in-out',
+				'rotate-3d': 'rotate-3d 20s infinite ease-in-out',
 			}
 		}
 	},
