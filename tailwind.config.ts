@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,6 +64,8 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// Custom brand colors
+				'lovable-blue': '#9b87f5', // Adding the missing lovable-blue color
+				'lovable-teal': '#0D9488', // Adding the missing lovable-teal color
 				teal: {
 					500: '#0D9488',
 					600: '#0D9488',
