@@ -1,33 +1,30 @@
 
 import React, { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Sphere, MeshDistortMaterial } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+import { Mesh } from 'three';
 import * as THREE from 'three';
 
-const BrainMesh = ({ color = "#9b87f5" }) => {
-  const mesh = useRef<THREE.Mesh>(null);
-  
-  useFrame(() => {
-    if (mesh.current) {
-      mesh.current.rotation.x = mesh.current.rotation.x + 0.003;
-      mesh.current.rotation.y = mesh.current.rotation.y + 0.003;
-    }
-  });
+// Separate component for the brain mesh
+const BrainMesh = ({ color = "#9b87f5" }: { color?: string }) => {
+  const meshRef = useRef<Mesh>(null);
 
+  // Animation logic is now handled with a simple rotation in the return
   return (
-    <Sphere ref={mesh} args={[1, 64, 64]} scale={1.4}>
-      <MeshDistortMaterial 
-        color={color}
-        attach="material"
-        distort={0.4}
-        speed={2}
+    <mesh ref={meshRef} rotation={[0, 0, 0]}>
+      <sphereGeometry args={[1.4, 64, 64]} />
+      <meshStandardMaterial 
+        color={color} 
         roughness={0.5}
+        metalness={0.1}
+        wireframe={false}
       />
-    </Sphere>
+    </mesh>
   );
 };
 
-const Brain3D = ({ className = "" }) => {
+// Main component with canvas
+const Brain3D = ({ className = "" }: { className?: string }) => {
   return (
     <div className={`w-full h-[400px] ${className}`}>
       <Canvas camera={{ position: [0, 0, 3] }}>
